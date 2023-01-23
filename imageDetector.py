@@ -1,0 +1,23 @@
+from pdfminer.high_level import extract_pages
+from pdfminer.layout import LTFigure,LTImage
+
+path1 = ""
+path2 = ""
+
+def noImages(path):
+    counter = 0 
+    for page_layout in extract_pages(path):
+        for element in page_layout:
+            if isinstance(element, LTFigure) or isinstance(element, LTImage) :
+                counter+=1
+    return counter
+
+def display(no1,no2):
+    if no1!=no2:
+        print("not the same, we have ",no1-no2, " missing images")
+    else:
+        print("same number of images")
+
+img1 = noImages(path1)
+img2 = noImages(path2)
+display(img1,img2)
