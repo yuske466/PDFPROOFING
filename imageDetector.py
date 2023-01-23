@@ -1,8 +1,8 @@
 from pdfminer.high_level import extract_pages
 from pdfminer.layout import LTFigure,LTImage
 
-path1 = ""
-path2 = ""
+path1 = "Pdf-Proofing/Sample/imageDetection/Unvalidated/Unvalidated/Trimble Roadworks Asphalt Compactor Operator_s Manual V2.11.xA (ENG).pdf"
+path2 = "Pdf-Proofing/Sample/imageDetection/Validated/Validated/Trimble Roadworks Asphalt Compactor Operator_s Manual V2.11.xA (ENG).pdf"
 
 def noImages(path):
     counter = 0 
