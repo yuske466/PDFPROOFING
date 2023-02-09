@@ -1,6 +1,4 @@
 import fasttext
-import os
-from pathlib import Path
 import re
 from pdfminer.layout import LAParams, LTTextBox
 from pdfminer.pdfpage import PDFPage
@@ -44,5 +42,11 @@ def languageDetector(file,language):
                         print("")
     print('\n\nANALYSIS COMPLETE...')
     
-file= "Pdf-Proofing/Sample/Cat GRADE Dozer Operator's Manual V2.11.xA (ENG).pdf"
-languageDetector(file,'en')
+def display(file,language):
+    languageDetector(file,language)
+try:
+    path = input("enter path : ").replace('\\','/').replace('"', '')
+    language = input("LANGUAGES:\n\nda = danish, de = german, en = english, es = Spanish, fr = french, it = italian, ja = japanese, ko = korean, no = norwegian, nl = dutch, pl = polish, pt = portuguese,  ru = russian, sv = swedish zh, = chinese\n\nEnter language : ")
+    display(path,language.lower())
+except:
+    print("Error, wrong file name")

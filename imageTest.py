@@ -23,10 +23,6 @@ class TestImages(unittest.TestCase):
     
     def test_isDifferent(self):
         self.assertTrue(self.images1 != self.images2)
-    
-    
-    
-
 
 if __name__ == '__main__':
     unittest.main()

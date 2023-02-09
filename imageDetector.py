@@ -16,6 +16,3 @@ def display(no1,no2):
     else:
         print("same number of images")
 
-# img1 = noImages(path1)
-# img2 = noImages(path2)
-# display(img1,img2)
