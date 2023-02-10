@@ -13,7 +13,7 @@ def generalFilter(lang,odds,language):
         return (lang!=language) and odds>0.95
 
 def languageDetector(file,language):
-    model = fasttext.load_model('Pdf-Proofing/lid.176.ftz')
+    model = fasttext.load_model('lid.176.ftz')
     fp = open(file, 'rb')
     rsrcmgr = PDFResourceManager()
     laparams = LAParams()
