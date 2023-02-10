@@ -20,6 +20,10 @@ Trimble uses the following
 da = danish, de = german, en = english, es = Spanish, fr = french, it = italian, ja = japanese, ko = korean, no = norwegian, nl = dutch, pl = polish, pt = portuguese,  ru = russian, sv = swedish zh, = chinese
 ```
 ## Usage languageDetector
+Open terminal in your current path by using cmd. type the following:
+```
+python languageDetector.py
+```
 Simply **shift + right-click** on the pdf file, and the **copy as path** option will appear, allowing you to obtain the pdf file path.
 ```text
 enter path : "C:\Users\sqadir\Documents\file.pdf"
